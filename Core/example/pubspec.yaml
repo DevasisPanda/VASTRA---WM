@@ -1,0 +1,23 @@
+name: example
+description: A new Flutter project.
+version: 1.0.0+1
+
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+
+  tinkoff_acquiring: ^3.0.11
+  tinkoff_acquiring_flutter: ^3.0.11
+
+dependency_overrides:
+  tinkoff_acquiring:
+    path: ../packages/tinkoff_acquiring
+  tinkoff_acquiring_flutter:
+    path: ../packages/tinkoff_acquiring_flutter
+
+flutter:
+  uses-material-design: true
